@@ -1,0 +1,45 @@
+* {
+    font-family: 'Signika', sans-serif;
+}
+
+.desc {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+}
+
+.even {
+    background-color: mediumspringgreen;
+}
+
+.odd {
+    background-color: aliceblue;
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto auto;
+    grid-gap: 10px; /* Gap between images */
+    max-width: 600px; /* Optional: to control the size of the grid */
+    margin: 0 auto; /* Optional: to center the grid */
+}
+
+.image-collage img {
+    width: 100%; /* Makes the images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.image-collage:first-child {
+    grid-column: span 2;
+}
