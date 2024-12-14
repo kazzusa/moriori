@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.third-segment, .fifth-segment {
+    background-color: #d2e4da;
+}
+
+.bottom-segment, .fourth-segment, .second-segment {
+    background-color: #ffffff;
+}
+/*Nutritions*/
+.nutritions-picture img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid green;
+}
+
+.nutritions-title {
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+/*==================================*/
+
+/*goal*/
+.goal-title {
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+} 
+
+.goal-desc {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    text-align: center;
+}
+/*=====================================*/
+
+/*Biography*/
+.biography-title {
+    font-family: 'Signika', sans-serif;
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 40px
+}
+
+.biography-desc {
+    max-width: 600px;
+    margin-left: 40px;
+    text-align: left;
+}
+/*=====================================*/
