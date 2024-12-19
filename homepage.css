@@ -4,9 +4,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.third-segment,
-.fifth-segment {
+.third-segment, .fifth-segment {
     background-color: #eaf5dc;
+    background-image: url('stocks/pale-textile-template.jpg'); /* Replace with the path to your texture image */
+    background-size: cover; /* Adjust as needed, e.g., 'repeat' for a repeating texture */
+    background-repeat: no-repeat; /* Use 'repeat' if you want the texture to tile */
+    background-position: center;
 }
 
 .bottom-segment,
@@ -140,25 +143,45 @@
 /*============*/
 
 /*Nutritions*/
+.fourth-segment{
+    background-image: url(stocks/istockphoto-1042986468-612x612.jpg);
+}
 .nutritions-title {
     font-family: 'Signika', sans-serif;
     text-align: center;
-    padding: 10px;
-    font-size: 30px;
+    padding: 20px; /* Increase padding for more space */
+    font-size: 36px; /* Increase font size for emphasis */
+    font-weight: bold; /* Make the text bold */
+    color: #2c3e50; /* Change text color for contrast */
+    background: linear-gradient(135deg, #eaf5dc, #b8d8c9); /* Add a subtle gradient background */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px; /* Add margin to separate from content below */
+    position: relative;
 }
 
 .nutrition-point {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    /* Adjust the gap between items */
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Use minmax to control column size */
+    gap: 30px; /* Reduce the gap between columns */
     align-items: center;
+    justify-items: center; /* Center items horizontally */
     background-color: #fff;
     padding: 20px;
+    max-width: 900px; /* Set a max-width to limit the container size */
+    margin: 0 auto; /* Center the grid container */
 }
 
 .nutritions-desc {
     text-align: center;
+    font-family: 'Signika', sans-serif; /* Change font for variety */
+    font-size: 18px; /* Adjust font size */
+    font-weight: 600; /* Make text bold */
+    background-color: #eaf5dc; /* Add a subtle background color */
+    padding: 15px; /* Add padding around the text */
+    border-radius: 10px; /* Round the corners */
+    line-height: 1.5; /* Increase line height for readability */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .nutritions-point-1,
@@ -168,11 +191,18 @@
     align-items: center;
 }
 
+.nutritions-picture {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically if needed */
+}
+
 .nutritions-picture img {
-    height: 300px;
-    width: 300px;
+    height: 200px; /* Reduced size */
+    width: 200px;  /* Reduced size */
     border-radius: 50%;
-    border: 5px solid green;
+    border: 5px solid #000000;
+    margin-bottom: 20px; /* Add margin to create space between image and description */
 }
 
 /*==================================*/
@@ -182,6 +212,7 @@
     font-family: 'Signika', sans-serif;
     text-align: center;
     padding: 10px;
+    padding-top: 30px;
     font-size: 30px;
 }
 
@@ -206,7 +237,7 @@
 
 /*Biography*/
 .bottom-segment {
-    background: url('pic full.jpg') no-repeat center center;
+    background: url('stocks/pic full.jpg') no-repeat center center;
     background-size: cover; /* Ensures the image covers the entire segment */
     min-height: 100vh; /* Adjust the height as needed */
     position: relative;
