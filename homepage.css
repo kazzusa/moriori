@@ -46,7 +46,7 @@
 }
 
 .right-bottom-border {
-    transform: translate(120vh, -15vh);
+    transform: translate(115vh, -15vh);
 }
 
 .left-bottom-border h1 {
@@ -142,6 +142,54 @@
 }
 
 /*============*/
+
+/*About us*/
+
+.second-segment{
+    display: flex;
+}
+
+.about-us-left{
+    width: 46%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.about-us-head{
+    padding: 2%;
+}
+
+.about-us-right{
+    width: 46%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+}
+/*===========*/
+
+/*About our products*/
+
+.third-segment {
+    display: flex;
+}
+
+.about-our-products-right{
+    width: 46%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.about-our-products-head {
+    padding: 2%;
+}
+
+.about-our-products-left{
+    width: 46%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+}
+/*===========*/
 
 /*Nutritions*/
 .nutritions-title {
